@@ -1,7 +1,7 @@
 .main-container {
     overflow: hidden;
 }
-.title-container {height: 9vh;
+.title-container {
 }
 .title-container table {
     width: 100%;
@@ -69,14 +69,16 @@ span.play-control {
 }
 
 .play-control-container {
-    height: 20vh;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 .browse-container {
   
-    background: #1b1b1b;
+    
     overflow-y: scroll;
     overflow-x: hidden;
-    height: 71vh;
+    height: 70vh;
     display:block;
 }
 .browse-container .mat-list {
@@ -92,17 +94,16 @@ span.play-control {
     margin: 0;
     color: #FFF;
 }
-@media (max-width: 599px){
-    .title-container {
-        height: 7vh;
-    }
+/* @media (max-width: 320px){
     .browse-container {
-        height: 78vh;
-    }
-    .play-control-container {
-        height: 15vh;
+        height: 70vh;
     }
 }
+@media (max-width: 599px){
+    .browse-container {
+        height: 73vh;
+    }
+} */
 .browse-container .mat-list-item.mat-list-item span.file-control {
     display: inline-block;
     width: 30px;
