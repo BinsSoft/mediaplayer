@@ -1,1 +1,14 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~@fortawesome/fontawesome-free/css/all.css";
 /* You can add global styles to this file, and also import other style files */
+body {
+    font-size: 12px;
+    font-family: arial;
+    margin: 0;
+}
+.play-control-container {
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    width: 100%;
+}

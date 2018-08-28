@@ -1,0 +1,91 @@
+.title-container {
+    width: 100%;
+}
+.clear-playlist {
+    float: right;
+}
+.title-container .title {
+    display: inline-block;
+    width: 75%;
+    text-align: center;
+}
+.cross-line {
+    display: inline-block;
+    width: 23px;
+    height: 3px;
+    background: #FFF;
+    position: absolute;
+    z-index: 99;
+    transform: rotate(39deg);
+    top: 18px;
+    left: 10px;
+}
+span.volumn-control {
+    display: inline-block;
+    width: 15%;
+    position: relative;
+}
+span.loop-control {
+    display: inline-block;
+    width: 15%;
+    position: relative;
+}
+span.play-control {
+    text-align: center;
+    display: inline-block;
+    width: 70%;
+}
+
+.control-progress-bar {
+    width: 100%;
+}
+.control-bar {
+    width: 100%;
+}
+.control-time {
+    width: 100%;
+}
+.control-time .current {
+    float: left;
+}
+.control-time .duration {
+    float: right;
+    clear : right;
+}
+.control-time marquee {
+    display: block;
+}
+.mat-list-item.mat-list-item {
+    padding: 10px;
+    border-bottom: 1px solid #CCC;
+}
+.app-container {
+    position: relative;
+}
+.browse-container {
+    position: fixed;
+    width: 100%;
+    background: #1b1b1b;
+    height: 92vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.browse-container .mat-list-item.mat-list-item {
+    color : #FFF;
+}
+.browse-container .mat-list-item.mat-list-item.active {
+    display: block;
+    background: #CCC;
+    width: 100%;
+    margin: 0;
+    color: #000;
+}
+
+.browse-container .mat-list-item.mat-list-item span.file-control {
+    display: inline-block;
+    width: 30px;
+}
+.browse-container .mat-list-item.mat-list-item  span.file-remove {
+    display: inline-block;
+    width: 30px;
+}
