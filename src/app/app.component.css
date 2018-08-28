@@ -1,12 +1,15 @@
-.title-container {
+.main-container {
+    overflow: hidden;
+}
+.title-container {height: 9vh;
+}
+.title-container table {
     width: 100%;
 }
 .clear-playlist {
-    float: right;
+    text-align: right;
 }
 .title-container .title {
-    display: inline-block;
-    width: 75%;
     text-align: center;
 }
 .cross-line {
@@ -24,6 +27,11 @@ span.volumn-control {
     display: inline-block;
     width: 15%;
     position: relative;
+    text-align: right;
+}
+.volumn-control i.cross-line {
+    left: 26px;
+    background: #CCC;
 }
 span.loop-control {
     display: inline-block;
@@ -59,28 +67,42 @@ span.play-control {
     padding: 10px;
     border-bottom: 1px solid #CCC;
 }
-.app-container {
-    position: relative;
+
+.play-control-container {
+    height: 20vh;
 }
 .browse-container {
-    position: fixed;
-    width: 100%;
+  
     background: #1b1b1b;
-    height: 92vh;
     overflow-y: scroll;
     overflow-x: hidden;
+    height: 71vh;
+    display:block;
+}
+.browse-container .mat-list {
+    padding-top: 0;
 }
 .browse-container .mat-list-item.mat-list-item {
     color : #FFF;
 }
 .browse-container .mat-list-item.mat-list-item.active {
     display: block;
-    background: #CCC;
+    background: #717171;
     width: 100%;
     margin: 0;
-    color: #000;
+    color: #FFF;
 }
-
+@media (max-width: 599px){
+    .title-container {
+        height: 7vh;
+    }
+    .browse-container {
+        height: 78vh;
+    }
+    .play-control-container {
+        height: 15vh;
+    }
+}
 .browse-container .mat-list-item.mat-list-item span.file-control {
     display: inline-block;
     width: 30px;

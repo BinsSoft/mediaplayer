@@ -6,9 +6,6 @@ body {
     font-family: arial;
     margin: 0;
 }
-.play-control-container {
-    position: fixed;
-    z-index: 99;
-    bottom: 0;
-    width: 100%;
+app-root {
+    overflow: hidden;
 }
