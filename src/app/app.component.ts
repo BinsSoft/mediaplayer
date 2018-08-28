@@ -50,6 +50,7 @@ export class AppComponent {
   loadAudio(index) {
     this.audio.active = index;
     let file = this.files[index];
+    this.progessValue = 0;
     const audioComponentObj = this;
     audioComponentObj.audio.player.src =file.file
     audioComponentObj.audio.player.load();
@@ -173,5 +174,9 @@ export class AppComponent {
   {
     this.files.splice(index,1);
   }
-  
+  drugTimeSlider(event:any)
+  {
+    this.progessValue = (event.value).toFixed(1);
+    this.audio.player.currentTime = (this.progessValue * this.audio.player.duration)/100;
+  }
 }

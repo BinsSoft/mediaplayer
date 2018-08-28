@@ -53,16 +53,18 @@ span.play-control {
 .control-time {
     width: 100%;
 }
-.control-time .current {
-    float: left;
+.control-time table {
+    width: 100%;
+    font-size: 14px;
 }
+
 .control-time .duration {
-    float: right;
-    clear : right;
+    text-align: right;
 }
-.control-time marquee {
-    display: block;
+.control-time .marquee-td {
+    width: 70%;
 }
+
 .mat-list-item.mat-list-item {
     padding: 10px;
     border-bottom: 1px solid #CCC;
@@ -73,9 +75,13 @@ span.play-control {
     width: 100%;
     bottom: 0;
 }
+
+.play-control-container mat-slider {
+    width: 100%;
+    position: absolute;
+    top: -25px;
+}
 .browse-container {
-  
-    
     overflow-y: scroll;
     overflow-x: hidden;
     height: 70vh;
@@ -94,16 +100,7 @@ span.play-control {
     margin: 0;
     color: #FFF;
 }
-/* @media (max-width: 320px){
-    .browse-container {
-        height: 70vh;
-    }
-}
-@media (max-width: 599px){
-    .browse-container {
-        height: 73vh;
-    }
-} */
+
 .browse-container .mat-list-item.mat-list-item span.file-control {
     display: inline-block;
     width: 30px;
